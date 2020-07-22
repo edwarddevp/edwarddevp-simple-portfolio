@@ -17,11 +17,11 @@ const slideRight = {
 };
 
 const fade ={
-
+    duration:2000
 }
 ScrollReveal().reveal('.slideLeft',slideLeft);
 ScrollReveal().reveal('.slideRight',slideRight);
-ScrollReveal().reveal('.fade');
+ScrollReveal().reveal('.fadeHero',fade);
 
 
 window.onscroll = function() {scrollFunction()};

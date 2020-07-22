@@ -122,6 +122,11 @@ body::-webkit-scrollbar-thumb:active {
     border-bottom: 100px solid #001F29;
 }
 
+.padding{
+    padding-top: 8em;
+    padding-bottom: 4em;
+}
+
 /** projects **/
 
 .projects{
@@ -200,18 +205,25 @@ body::-webkit-scrollbar-thumb:active {
         top: -60px;
     }
     .about-section{
-        width: 300px;
-        min-width: 300px;
+        width: 100%;
+        min-width: 100%;
     }
     
 
  }
 
  /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+ @media (min-width: 576px) { 
     .about-section{
         width: 550px;
         min-width: 550px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .about-section{
+        width: 650px;
+        min-width: 650px;
     }
  }
 
