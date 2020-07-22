@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+.href-point{
+    position: absolute;
+    top: -60px;
+}
+
 /** Scroll-bar **/
 
 body::-webkit-scrollbar {
@@ -32,7 +37,7 @@ body::-webkit-scrollbar-thumb:active {
 
 /** nav **/
 .bg-nav{
-    background-color: transparent;
+    transition: all ease 0.3s;
 }
 
 .navbar-options{
@@ -50,10 +55,10 @@ body::-webkit-scrollbar-thumb:active {
 
 /** hero **/
 .hero{
-    padding-top: 56px;
+    padding-top: 60px;
     height: 100vh;
     background-color: #fff;
-    background-image: url('../images/herpo-dark-65.jpg') ;
+    background-image: url('../images/hero-dark.jpg') ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -190,6 +195,9 @@ body::-webkit-scrollbar-thumb:active {
 
     .hero{
         padding-top: 130px;
+    }
+    .href-point{
+        top: -60px;
     }
     .about-section{
         width: 300px;
