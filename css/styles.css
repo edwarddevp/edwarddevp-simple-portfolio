@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .hero-title{
-    font-size: 2.5em;
+    font-size: 1.4em;
     /* text-align: center; */
     width: 100%;
     color: #00b8f5;
@@ -228,6 +228,10 @@ background-image:
     
 }
 
+.button-group{
+    margin: auto;
+    min-width: 300px;
+}
 /** Contact **/
 
 .contact{
@@ -260,7 +264,9 @@ background-image:
 .slideIn{
     animation: slide 2s forwards;
 }
-
+.navbar-brand{
+    margin-right: 0;
+}
 .navbar-brand-icon{
     display: none;
 }
@@ -286,9 +292,6 @@ background-image:
     }
     .project-ref {
         top: -60px;
-    }
-    .hero-title{
-        font-size: 1.5em;
     }
     .navbar-brand{
         width: 100%;
@@ -317,6 +320,9 @@ background-image:
 
  /* // Medium devices (tablets, 768px and up) */
  @media (min-width: 576px) { 
+    .hero-title{
+        font-size: 1.5em;
+    }
     .about-section{
         width: 550px;
         min-width: 550px;
@@ -333,6 +339,9 @@ background-image:
     }
     .skills-grid{
         width: 100%;
+    }
+    .hero-title{
+        font-size: 2.5em;
     }
  }
 
