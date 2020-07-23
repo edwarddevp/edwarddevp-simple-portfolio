@@ -53,9 +53,14 @@ body::-webkit-scrollbar-thumb:active {
     border-bottom: 4px solid #fff;
 }
 
+.slideUp{
+    top:-56px;
+    animation: slideUp 1.5s forwards;
+}
+
+
 /** hero **/
 .hero{
-    padding-top: 60px;
     height: 100vh;
     background-color: #fff;
     background-image: url('../images/hero-dark.jpg') ;
@@ -70,7 +75,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .hero-title{
-    font-size: 4em;
+    font-size: 2.5em;
     /* text-align: center; */
     width: 100%;
     color: #00b8f5;
@@ -100,9 +105,11 @@ body::-webkit-scrollbar-thumb:active {
     padding-bottom: 8em;
 }
 
-.about-title{
-    font-size: 4em;
-    padding-bottom: 10px;
+.about-ref {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
 }
 
 .about-description{
@@ -127,12 +134,82 @@ body::-webkit-scrollbar-thumb:active {
     padding-bottom: 4em;
 }
 
+/** percentages abilities **/
+.prec{
+    top: 8px;
+    position: relative;
+    font-size: 13px;
+    color:#000;
+    font-weight: 600;
+}
+
+.circle{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+    background-color:#A2ECFB;
+    
+   
+}
+
+.Javascript{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(240deg, transparent 50%, #39B4CC 50%);
+}
+.React{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(220deg, transparent 50%, #39B4CC 50%);
+}
+.CSS{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(230deg, transparent 50%, #39B4CC 50%);
+}
+.Nodejs{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(220deg, transparent 50%, #39B4CC 50%);
+}
+.SQL{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(200deg, transparent 50%, #39B4CC 50%);
+}
+
 /** projects **/
 
 .projects{
     background-color: #001F29;
     padding-top: 2em;
     padding-bottom: 6em;
+}
+
+.project-ref {
+    display: block;
+    position: relative;
+    top: -20px;
+    visibility: hidden;
 }
 
 .project-title{
@@ -187,8 +264,31 @@ body::-webkit-scrollbar-thumb:active {
     display: none;
 }
 
+/** footer **/
+
+.social-icons{
+    transition: all 0.3s ease;
+}
+
+.social-icons:hover{
+    animation: moveUp 0.3s forwards alternate;
+}
+
 
 @media (max-width: 576px) { 
+    .slideUp{
+        top:-97px;
+    }
+    
+    .about-ref {
+        top: -97px;
+    }
+    .project-ref {
+        top: -60px;
+    }
+    .hero-title{
+        font-size: 1.5em;
+    }
     .navbar-brand{
         width: 100%;
         align-items: center;
@@ -202,10 +302,6 @@ body::-webkit-scrollbar-thumb:active {
         width: 100%;
         align-items: center;
         justify-content: center;
-    }
-
-    .hero{
-        padding-top: 130px;
     }
     .href-point{
         top: -60px;
@@ -224,12 +320,18 @@ body::-webkit-scrollbar-thumb:active {
         width: 550px;
         min-width: 550px;
     }
+    .skills-grid{
+        width: 498px;
+    }
  }
 
 @media (min-width: 768px) { 
     .about-section{
         width: 650px;
         min-width: 650px;
+    }
+    .skills-grid{
+        width: 100%;
     }
  }
 
@@ -238,9 +340,16 @@ body::-webkit-scrollbar-thumb:active {
     to {opacity: 1;}
   }
 
+  @keyframes moveUp {
+    100% { transform: translateY(-5px); }
+    }
   
   @keyframes slide {
     100% { margin-right: 0; }
+    }
+
+  @keyframes slideUp {
+    100% { top: 0; }
     }
 
     @keyframes rotate {
