@@ -284,11 +284,11 @@ background-image:
 
 @media (max-width: 576px) { 
     .slideUp{
-        top:-97px;
+        top:-87px;
     }
     
     .about-ref {
-        top: -97px;
+        top: -87px;
     }
     .project-ref {
         top: -60px;
